@@ -7,9 +7,9 @@ def jump(event):
     except:
         pass
 
-w = Tk()
-Label(w, text="Page Number:").grid(row=0)
-entry = Entry(w)
+root = Tk()
+Label(root, text="Page Number:").grid(row=0)
+entry = Entry(root)
 entry.grid(row=0, column=1)
 entry.bind("<Return>", jump)
-w.mainloop()
+root.mainloop()
